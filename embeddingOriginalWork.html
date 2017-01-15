@@ -9,12 +9,20 @@
 		Youtube Video
 		<iframe width="200" height="200" src="https://www.youtube.com/embed/HCNwSe3t8ek"  ?start=180 frameborder="0" allowfullscreen></iframe>
 		
-		HTML5
-		<video id="sampleMovie" width="640" height="360" preload controls>
-			<source src="HTML5Sample_H264.mov" />
-			<source src="HTML5Sample_Ogg.ogv" />
-			<source src="HTML5Sample_WebM.webm" />
-		</video>
+		<video width="640" height="360" controls>
+	<source src="__VIDEO__.MP4"  type="video/mp4" />
+	<source src="__VIDEO__.OGV"  type="video/ogg" />
+	<object width="640" height="360" type="application/x-shockwave-flash" data="__FLASH__.SWF">
+		<param name="movie" value="__FLASH__.SWF" />
+		<param name="flashvars" value="controlbar=over&amp;image=__POSTER__.JPG&amp;file=__VIDEO__.MP4" />
+		<img src="__VIDEO__.JPG" width="640" height="360" alt="__TITLE__"
+		     title="No video playback capabilities, please download the video below" />
+	</object>
+</video>
+<p>	<strong>Download Video:</strong>
+	Closed Format:	<a href="__VIDEO__.MP4">"MP4"</a>
+	Open Format:	<a href="__VIDEO__.OGV">"Ogg"</a>
+</p>
 	
 	</body>
 </html>
